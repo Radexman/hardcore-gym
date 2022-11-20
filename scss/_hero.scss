@@ -1,0 +1,24 @@
+@function fontFamily($family-name) {
+    @return map-get($font-family, $family-name)
+};
+
+.main__section {
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    padding-top: 8em;
+    background: 
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .9),
+            rgba(250, 0, 0, 0.6)
+    ),
+    url(/dist/assets/images/hero-img.jpg);
+    background-size: cover;
+}
+
+.section__h2 {
+    color: #fff;
+    font-family: fontFamily(primary);
+}

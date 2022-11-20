@@ -1,4 +1,6 @@
-// Font Stack
+// ===== Font Stack ===== //
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=PT+Serif:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Road Rage';
@@ -7,4 +9,57 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+// ===== Variables ===== //
+
+// Typography
+$font-family: (
+    "brand": 'Road Rage',
+    "primary": 'Open Sans',
+    "secondary": 'PT Serif'
+);
+$font-size: clamp(.9rem, 2.5vw, 1.5rem);
+$line-height: 1.4;
+
+// Colors
+$clr-brand: #f70101;
+$clr-primary: #0D0D0D;
+$clr-accent: #F2541B;
+$clr-txt: #ffffff;
+$clr-transparent: #000000f2;
+
+// Transition
+$transition: all .2s ease-in-out;
+
+// Nav Bars
+@mixin bar {
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    background: $clr-accent;
+    transition: $transition;
+}
+
+// ===== Normalize ===== //
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+label,
+textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
