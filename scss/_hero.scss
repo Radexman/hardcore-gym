@@ -22,3 +22,8 @@
     color: #fff;
     font-family: fontFamily(primary);
 }
+
+.section__btn {
+    margin-top: 5%;
+    @include mainBtn;
+}

@@ -32,6 +32,12 @@ $clr-transparent: #000000f2;
 // Transition
 $transition: all .2s ease-in-out;
 
+// Sizing
+$borders: 2px solid $clr-accent;
+$border-radius: 5px;
+
+// ===== Mixins ===== //
+
 // Nav Bars
 @mixin bar {
     position: absolute;
@@ -39,6 +45,15 @@ $transition: all .2s ease-in-out;
     height: 3px;
     background: $clr-accent;
     transition: $transition;
+    border-radius: $border-radius;
+}
+
+// Buttons
+@mixin mainBtn {
+    border-radius: $border-radius;
+    cursor: pointer;
+    background-color: $clr-transparent;
+    color: $clr-txt;
 }
 
 // ===== Normalize ===== //
@@ -53,7 +68,8 @@ $transition: all .2s ease-in-out;
 
 input,
 label,
-textarea {
+textarea,
+button {
     font-size: 100%;
     font-family: inherit;
 }
