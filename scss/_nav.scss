@@ -40,7 +40,6 @@
 }
 
 .nav {
-    min-width: 30%;
     visibility: hidden;
 
     &.open {
@@ -52,7 +51,6 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
-        height: 60vh;
         overflow: hidden;
         background: $clr-transparent;
         padding-right: 1em;

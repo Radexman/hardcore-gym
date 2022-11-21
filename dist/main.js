@@ -4,10 +4,10 @@ const menuBtn = document.querySelector('.header__menu');
 const hamburger = document.querySelector('.menu__burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.nav__ul');
-const navHome = document.querySelector('#home');
-const navAbout = document.querySelector('#about');
-const navPlans = document.querySelector('#plans');
-const navContact = document.querySelector('#contact');
+const navHome = document.querySelector('#homenav');
+const navAbout = document.querySelector('#aboutnav');
+const navPlans = document.querySelector('#plansnav');
+const navContact = document.querySelector('#contactnav');
 
 // Addition of 'open' class that toggles 
 // navbar to pop up

@@ -2,6 +2,10 @@
     @return map-get($font-family, $family-name)
 };
 
+@function fontWeight($weight-name) {
+    @return map-get($font-weight, $weight-name)
+};
+
 .main__section {
     height: 100vh;
     overflow: hidden;
@@ -16,6 +20,7 @@
     ),
     url(/dist/assets/images/hero-img.jpg);
     background-size: cover;
+    z-index: 5;
 }
 
 .section__h2 {
@@ -26,4 +31,9 @@
 .section__btn {
     margin-top: 5%;
     @include mainBtn;
+    @include primaryBtn;
+
+    &:hover {
+        @include hoverBtn;
+    }
 }

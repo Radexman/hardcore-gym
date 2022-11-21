@@ -1,9 +1,15 @@
 @import './config';
 @import './hero';
 @import './nav';
+@import './article';
+@import './media-querries';
 
 @function fontFamily($family-name) {
     @return map-get($font-family, $family-name)
+};
+
+@function fontWeight($weight-name) {
+    @return map-get($font-weight, $weight-name)
 };
 
 html  {
@@ -19,11 +25,12 @@ body {
 
 h1 {
     font-family: fontFamily(brand);
+    font-weight: fontWeight(normal);
     font-size: 3.5rem;
     color: $clr-brand;
 }
 
-h2, h3 {
+h2, h3, h4 {
     font-family: fontFamily(secondary);
     color: $clr-brand;
 }
@@ -47,6 +54,7 @@ ul {
     right: 0;
     width: 100%;
     padding: .5em;
+    height: 0%;
 }
 
 .main {

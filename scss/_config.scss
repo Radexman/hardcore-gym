@@ -1,6 +1,7 @@
 // ===== Font Stack ===== //
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
 
 @font-face {
     font-family: 'Road Rage';
@@ -17,10 +18,16 @@
 $font-family: (
     "brand": 'Road Rage',
     "primary": 'Open Sans',
-    "secondary": 'PT Serif'
+    "secondary": 'Oswald'
+);
+$font-weight: (
+    "normal": 400,
+    "bold": 500,
+    "extra": 600
 );
 $font-size: clamp(.9rem, 2.5vw, 1.5rem);
 $line-height: 1.4;
+$ltr-spc: .1em;
 
 // Colors
 $clr-brand: #f70101;
@@ -28,6 +35,8 @@ $clr-primary: #0D0D0D;
 $clr-accent: #F2541B;
 $clr-txt: #ffffff;
 $clr-transparent: #000000f2;
+$opacity: .8;
+
 
 // Transition
 $transition: all .2s ease-in-out;
@@ -54,6 +63,22 @@ $border-radius: 5px;
     cursor: pointer;
     background-color: $clr-transparent;
     color: $clr-txt;
+    border: 2px solid $clr-brand;
+    display: inline-block;
+    font-weight: 600;
+}
+
+@mixin primaryBtn {
+    padding: .5em 1.5em;
+    min-width: 200px;
+}
+
+@mixin hoverBtn {
+    background-color: $clr-brand;
+    color: $clr-primary;
+    transition: $transition;
+    letter-spacing: $ltr-spc;
+    border: 2px solid $clr-primary;
 }
 
 // ===== Normalize ===== //
@@ -78,4 +103,18 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+// ===== Utilities ===== //
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.offscreen {
+    margin-left: -10000px;
 }

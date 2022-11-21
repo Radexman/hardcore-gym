@@ -1,0 +1,58 @@
+@function fontFamily($family-name) {
+    @return map-get($font-family, $family-name)
+};
+
+@function fontWeight($weight-name) {
+    @return map-get($font-weight, $weight-name)
+};
+
+.main__article {
+    min-height: 100vh;
+    padding: 1em 2.7em;
+
+    h2 {
+        margin-bottom: 5%;
+    }
+}
+
+.article__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+}
+
+.tutor-pic {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid $clr-brand;
+    border-radius: $border-radius;
+}
+
+.aside__box {
+    margin-bottom: 5%;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.article__aside {
+    display: grid;
+
+    h3 {
+        margin-bottom: 10%;
+    }
+}
+
+.article__div {
+    h3 {
+        margin-bottom: 5%;
+    }
+
+    h3:last-child {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
