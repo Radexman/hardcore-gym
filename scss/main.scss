@@ -3,6 +3,8 @@
 @import './nav';
 @import './article';
 @import './media-querries';
+@import './icons';
+@import './plans';
 
 @function fontFamily($family-name) {
     @return map-get($font-family, $family-name)
@@ -18,8 +20,8 @@ html  {
 }
 
 body {
-    background: #000;
-    color: #fff;
+    background: $clr-primary;
+    color: $clr-txt;
     font-family: fontFamily(primary);
 }
 
@@ -28,11 +30,20 @@ h1 {
     font-weight: fontWeight(normal);
     font-size: 3.5rem;
     color: $clr-brand;
+    text-shadow: $txt-shadow;
 }
 
 h2, h3, h4 {
     font-family: fontFamily(secondary);
     color: $clr-brand;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 p {

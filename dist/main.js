@@ -14,7 +14,6 @@ const navContact = document.querySelector('#contactnav');
 
 let openMenu = false;
 
-
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu () {

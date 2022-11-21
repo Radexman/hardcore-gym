@@ -28,11 +28,12 @@ $font-weight: (
 $font-size: clamp(.9rem, 2.5vw, 1.5rem);
 $line-height: 1.4;
 $ltr-spc: .1em;
+$txt-shadow: 0 0 7px #000;
 
 // Colors
 $clr-brand: #f70101;
 $clr-primary: #0D0D0D;
-$clr-accent: #F2541B;
+$clr-accent: #ff956e;
 $clr-txt: #ffffff;
 $clr-transparent: #000000f2;
 $opacity: .8;
@@ -52,7 +53,7 @@ $border-radius: 5px;
     position: absolute;
     width: 32px;
     height: 3px;
-    background: $clr-accent;
+    background: $clr-brand;
     transition: $transition;
     border-radius: $border-radius;
 }
@@ -61,11 +62,11 @@ $border-radius: 5px;
 @mixin mainBtn {
     border-radius: $border-radius;
     cursor: pointer;
-    background-color: $clr-transparent;
-    color: $clr-txt;
-    border: 2px solid $clr-brand;
+    color: $clr-accent;
+    border: 2px solid $clr-accent;
     display: inline-block;
     font-weight: 600;
+    font-family: 'Oswald';
 }
 
 @mixin primaryBtn {
@@ -74,11 +75,8 @@ $border-radius: 5px;
 }
 
 @mixin hoverBtn {
-    background-color: $clr-brand;
-    color: $clr-primary;
     transition: $transition;
     letter-spacing: $ltr-spc;
-    border: 2px solid $clr-primary;
 }
 
 // ===== Normalize ===== //

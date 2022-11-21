@@ -49,43 +49,43 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-top: 8em;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(250, 0, 0, 0.6))), url(/dist/assets/images/hero-img.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6)), url(/dist/assets/images/hero-img.jpg);
+  padding-top: 10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
   background-size: cover;
   z-index: 5;
 }
 
 .section__h2 {
-  color: #fff;
-  font-family: "Open Sans";
+  color: #f70101;
+  font-size: 1.5rem;
+  font-family: "Road Rage";
+  font-weight: 400;
+  text-shadow: 0 0 7px #000;
 }
 
 .section__btn {
   margin-top: 5%;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.9490196078);
-  color: #ffffff;
-  border: 2px solid #f70101;
+  color: #ff956e;
+  border: 2px solid #ff956e;
   display: inline-block;
   font-weight: 600;
+  font-family: "Oswald";
   padding: 0.5em 1.5em;
   min-width: 200px;
 }
 .section__btn:hover {
-  background-color: #f70101;
-  color: #0D0D0D;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   letter-spacing: 0.1em;
-  border: 2px solid #0D0D0D;
 }
 
 .header__menu {
   position: absolute;
   z-index: 1;
-  right: 1em;
+  right: 0.5em;
   top: 0.5rem;
   height: 20px;
   width: 32px;
@@ -96,7 +96,7 @@ img {
   position: absolute;
   width: 32px;
   height: 3px;
-  background: #F2541B;
+  background: #f70101;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-radius: 5px;
@@ -108,7 +108,7 @@ img {
   position: absolute;
   width: 32px;
   height: 3px;
-  background: #F2541B;
+  background: #f70101;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-radius: 5px;
@@ -119,7 +119,7 @@ img {
   position: absolute;
   width: 32px;
   height: 3px;
-  background: #F2541B;
+  background: #f70101;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-radius: 5px;
@@ -189,10 +189,10 @@ img {
 
 .main__article {
   min-height: 100vh;
-  padding: 1em 2.7em;
+  padding: 1em 3.1em;
 }
 .main__article h2 {
-  margin-bottom: 5%;
+  margin-block: 5%;
 }
 
 .article__grid {
@@ -206,12 +206,13 @@ img {
   height: auto;
   float: left;
   margin-right: 10px;
+  margin-top: 10px;
   border: 1px solid #f70101;
   border-radius: 5px;
 }
 
 .aside__box {
-  margin-bottom: 5%;
+  margin-bottom: 1em;
 }
 .aside__box p {
   text-align: justify;
@@ -231,6 +232,10 @@ img {
   margin-top: 10%;
   margin-bottom: 5%;
 }
+.article__div p {
+  text-align: justify;
+  margin-bottom: 40px;
+}
 
 @media screen and (max-width: 1000px) {
   .article__grid {
@@ -239,15 +244,64 @@ img {
   .article__div h3 {
     text-align: center;
   }
+  .main__article h2 {
+    margin-top: 25%;
+  }
+  .social__icons {
+    left: 15px;
+  }
 }
+@media screen and (max-width: 674px) {
+  .main__section {
+    padding-top: 40%;
+  }
+}
+.social__icons {
+  position: sticky;
+  top: 20px;
+  margin-left: -60px;
+  margin-top: -150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 30px;
+  gap: 0.2em;
+}
+.social__icons .social-ico {
+  font-size: 1.4rem;
+  color: #f70101;
+}
+.social__icons .social-ico:hover {
+  color: #ff956e;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+#plans {
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/plans-bg.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/plans-bg.jpg);
+  background-size: cover;
+}
+#plans h2 {
+  text-align: center;
+  margin-top: 1%;
+}
+
 html {
   font-size: clamp(0.9rem, 2.5vw, 1.5rem);
   scroll-behavior: smooth;
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: #0D0D0D;
+  color: #ffffff;
   font-family: "Open Sans";
 }
 
@@ -256,11 +310,20 @@ h1 {
   font-weight: 400;
   font-size: 3.5rem;
   color: #f70101;
+  text-shadow: 0 0 7px #000;
 }
 
 h2, h3, h4 {
   font-family: "Oswald";
   color: #f70101;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 p {

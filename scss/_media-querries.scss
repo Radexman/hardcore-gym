@@ -9,4 +9,20 @@
             text-align: center;
         }
     }
+
+    .main__article {
+        h2 {
+            margin-top: 25%;
+        }
+    }
+
+    .social__icons {
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    .main__section {
+        padding-top: 40%;
+    }
 }

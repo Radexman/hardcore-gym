@@ -8,10 +8,10 @@
 
 .main__article {
     min-height: 100vh;
-    padding: 1em 2.7em;
+    padding: 1em 3.1em;
 
     h2 {
-        margin-bottom: 5%;
+        margin-block: 5%;
     }
 }
 
@@ -26,12 +26,13 @@
     height: auto;
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
     border: 1px solid $clr-brand;
     border-radius: $border-radius;
 }
 
 .aside__box {
-    margin-bottom: 5%;
+    margin-bottom: 1em;
 
     p {
         text-align: justify;
@@ -54,5 +55,10 @@
     h3:last-child {
         margin-top: 10%;
         margin-bottom: 5%;
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 40px;
     }
 }

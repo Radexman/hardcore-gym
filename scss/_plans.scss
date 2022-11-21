@@ -1,0 +1,16 @@
+#plans {
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .9),
+        rgba(250, 0, 0, 0.6),
+        rgba(0, 0, 0, .9)
+    ),
+    url(/dist/assets/images/plans-bg.jpg);
+    background-size: cover;
+
+    h2 {
+        text-align: center;
+        margin-top: 1%;
+    }
+}
