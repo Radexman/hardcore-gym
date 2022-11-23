@@ -60,10 +60,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 5;
+}
+.main__section__hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
   background-size: cover;
-  z-index: 5;
 }
 
 .section__h2 {
@@ -302,14 +304,7 @@ img {
 
 .article__section {
   display: grid;
-}
-
-.section__plan {
-  border: 2px solid #ff956e;
-}
-
-.plan__h3 {
-  text-shadow: 6px 0 7px #000;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 html {

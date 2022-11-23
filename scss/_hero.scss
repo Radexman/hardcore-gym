@@ -15,7 +15,10 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background: 
+    z-index: 5;
+
+    &__hero {
+        background: 
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, .9),
@@ -24,7 +27,7 @@
     ),
     url(/dist/assets/images/hero-img.jpg);
     background-size: cover;
-    z-index: 5;
+    }
 }
 
 .section__h2 {

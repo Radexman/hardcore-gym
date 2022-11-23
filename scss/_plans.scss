@@ -18,13 +18,5 @@
 
 .article__section {
     display: grid;
-
-}
-
-.section__plan {
-    border: 2px solid $clr-accent;
-}
-
-.plan__h3 {
-    text-shadow: $txt-shadow;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
