@@ -49,7 +49,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
   background-size: cover;
@@ -61,7 +71,7 @@ img {
   font-size: 1.5rem;
   font-family: "Road Rage";
   font-weight: 400;
-  text-shadow: 0 0 7px #000;
+  text-shadow: 6px 0 7px #000;
 }
 
 .section__btn {
@@ -251,11 +261,6 @@ img {
     left: 15px;
   }
 }
-@media screen and (max-width: 674px) {
-  .main__section {
-    padding-top: 40%;
-  }
-}
 .social__icons {
   position: sticky;
   top: 20px;
@@ -292,10 +297,23 @@ img {
 #plans h2 {
   text-align: center;
   margin-top: 1%;
+  text-shadow: 6px 0 7px #000;
+}
+
+.article__section {
+  display: grid;
+}
+
+.section__plan {
+  border: 2px solid #ff956e;
+}
+
+.plan__h3 {
+  text-shadow: 6px 0 7px #000;
 }
 
 html {
-  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.5rem);
   scroll-behavior: smooth;
 }
 
@@ -310,7 +328,7 @@ h1 {
   font-weight: 400;
   font-size: 3.5rem;
   color: #f70101;
-  text-shadow: 0 0 7px #000;
+  text-shadow: 6px 0 7px #000;
 }
 
 h2, h3, h4 {

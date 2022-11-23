@@ -12,5 +12,19 @@
     h2 {
         text-align: center;
         margin-top: 1%;
+        text-shadow: $txt-shadow;
     }
+}
+
+.article__section {
+    display: grid;
+
+}
+
+.section__plan {
+    border: 2px solid $clr-accent;
+}
+
+.plan__h3 {
+    text-shadow: $txt-shadow;
 }

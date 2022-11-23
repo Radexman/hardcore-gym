@@ -11,7 +11,10 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-    padding-top: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     background: 
         linear-gradient(
             to bottom,
