@@ -16,18 +16,15 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
-
-    &__hero {
-        background: 
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, .9),
-            rgba(250, 0, 0, 0.6),
-            rgba(0, 0, 0, .9)
+    background: 
+    linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .9),
+        rgba(250, 0, 0, 0.6),
+        rgba(0, 0, 0, .9)
     ),
     url(/dist/assets/images/hero-img.jpg);
     background-size: cover;
-    }
 }
 
 .section__h2 {

@@ -61,8 +61,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 5;
-}
-.main__section__hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
   background-size: cover;
@@ -172,7 +170,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.9490196078);
+  background: hsla(0deg, 0%, 0%, 0.9);
   padding-right: 1em;
   border-radius: 5px;
   -webkit-transform: translateY(-100%);
@@ -263,6 +261,11 @@ img {
     left: 15px;
   }
 }
+@media screen and (max-width: 663px) {
+  #plans {
+    padding: 1em 5em;
+  }
+}
 .social__icons {
   position: sticky;
   top: 20px;
@@ -304,7 +307,58 @@ img {
 
 .article__section {
   display: grid;
+  gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.section__plan {
+  border: 2px solid #ff956e;
+  background: hsla(0deg, 0%, 0%, 0.85);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-block: 1em 2em;
+  padding-inline: 0.7em;
+}
+.section__plan:hover {
+  -webkit-box-shadow: 0 0 30px #f70101;
+          box-shadow: 0 0 30px #f70101;
+}
+
+.fa-dumbbell {
+  font-size: 0.9rem;
+  color: #f70101;
+  margin-right: 0.5em;
+}
+
+.btn__secondary {
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ff956e;
+  border: 2px solid #ff956e;
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Oswald";
+  padding: 0.2em 0.6em;
+  min-width: 100px;
+  margin-top: 4%;
+  background: #0D0D0D;
+}
+.btn__secondary:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.1em;
 }
 
 html {

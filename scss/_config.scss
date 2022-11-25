@@ -35,7 +35,7 @@ $clr-brand: #f70101;
 $clr-primary: #0D0D0D;
 $clr-accent: #ff956e;
 $clr-txt: #ffffff;
-$clr-transparent: #000000f2;
+$clr-transparent: hsla(0, 0%, 0%, .9);
 $opacity: .8;
 
 
@@ -78,6 +78,15 @@ $border-radius: 5px;
     transition: $transition;
     letter-spacing: $ltr-spc;
 }
+
+@mixin secondaryBtn {
+    padding: .2em .6em;
+    min-width: 100px;
+    margin-top: 4%;
+}
+
+// Shadows
+$box-shadow: 0 0 30px $clr-brand;
 
 // ===== Normalize ===== //
 

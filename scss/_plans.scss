@@ -18,5 +18,38 @@
 
 .article__section {
     display: grid;
+    gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.section__plan {
+    border: 2px solid $clr-accent;
+    background: hsla(0, 0%, 0%, .85);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1em 2em;
+    padding-inline: .7em;
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+.fa-dumbbell {
+    font-size: .9rem;
+    color: $clr-brand;
+    margin-right: .5em;
+}
+
+.btn__secondary {
+    @include mainBtn;
+    @include secondaryBtn;
+    background: $clr-primary;
+
+    &:hover {
+        @include hoverBtn;
+    }
 }
