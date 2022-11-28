@@ -11,13 +11,17 @@
     }
 
     .main__article {
-        h2 {
+        .problematic-h2 {
             margin-top: 25%;
         }
     }
 
     .social__icons {
         left: 15px;
+    }
+
+    address {
+        margin-block: 6%;
     }
 }
 

@@ -5,6 +5,7 @@
 @import './media-querries';
 @import './icons';
 @import './plans';
+@import './contact';
 
 @function fontFamily($family-name) {
     @return map-get($font-family, $family-name)
