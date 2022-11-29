@@ -401,6 +401,55 @@ address h3 {
   margin-bottom: 10%;
 }
 
+.footer {
+  background-color: #f70101;
+  padding: 0.5em 0.5em 0;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+.footer__wrapper address {
+  font-size: 0.7rem;
+}
+.footer__wrapper address .social-ico {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+.footer__wrapper address .social-ico:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #ff956e;
+}
+.footer__wrapper iframe {
+  height: 80%;
+  width: 40%;
+}
+.footer .legal-note {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 0.7em;
+}
+.footer .legal-note a {
+  color: #0D0D0D;
+  font-weight: bolder;
+}
+.footer .legal-note a:hover {
+  color: #ff956e;
+}
+
 html {
   font-size: clamp(0.8rem, 2.5vw, 1.5rem);
   scroll-behavior: smooth;

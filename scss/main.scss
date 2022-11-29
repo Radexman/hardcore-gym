@@ -6,6 +6,7 @@
 @import './icons';
 @import './plans';
 @import './contact';
+@import './footer';
 
 @function fontFamily($family-name) {
     @return map-get($font-family, $family-name)
