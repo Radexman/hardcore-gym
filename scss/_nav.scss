@@ -1,11 +1,11 @@
 .header__menu {
+    cursor: pointer;
+    height: 20px;
     position: absolute;
-    z-index: 1;
     right: .5em;
     top: .5rem;
-    height: 20px;
     width: 32px;
-    cursor: pointer;
+    z-index: 1;
 }
 
 .menu__burger {
@@ -47,14 +47,14 @@
     }
 
     &__ul {
+        align-items: center;
+        background: $clr-transparent;
+        border-radius: 5px;
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
         justify-content: center;
         overflow: hidden;
-        background: $clr-transparent;
         padding-right: 1em;
-        border-radius: 5px;
         transform: translateY(-100%);
         transition: $transition;
 
@@ -66,10 +66,10 @@
 
 .li__a {
     display: block;
-    width: 80vw;
-    text-align: center;
-    padding-block: .5em;
     font-size: 1.5rem;
+    padding-block: .5em;
+    text-align: center;
+    width: 80vw;
 
     &:hover {
         background-color: $clr-brand;

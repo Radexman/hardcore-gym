@@ -10,8 +10,8 @@
     background-size: cover;
 
     h2 {
-        text-align: center;
         margin-top: 1%;
+        text-align: center;
         text-shadow: $txt-shadow;
     }
 }
@@ -23,24 +23,24 @@
 }
 
 .section__plan {
-    border: 2px solid $clr-accent;
+    align-items: center;
     background: hsla(0, 0%, 0%, .85);
     border-radius: 10px;
+    border: 2px solid $clr-accent;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     justify-content: space-between;
     padding-block: 1em 2em;
     padding-inline: .7em;
+}
 
-    &:hover {
-        box-shadow: $box-shadow;
-    }
+.plan__ul {
+    height: 260px;
 }
 
 .fa-dumbbell {
-    font-size: .9rem;
     color: $clr-brand;
+    font-size: .9rem;
     margin-right: .5em;
 }
 

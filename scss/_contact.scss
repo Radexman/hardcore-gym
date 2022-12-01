@@ -9,9 +9,9 @@
 }
 
 .fieldset {
+    border: none;
     display: grid;
     grid-gap: .3em;
-    border: none;
     place-content: center;
 
     &__input, select{

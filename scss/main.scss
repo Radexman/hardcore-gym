@@ -7,6 +7,7 @@
 @import './plans';
 @import './contact';
 @import './footer';
+@import './scrollbar';
 
 @function fontFamily($family-name) {
     @return map-get($font-family, $family-name)
@@ -28,16 +29,16 @@ body {
 }
 
 h1 {
-    font-family: fontFamily(brand);
-    font-weight: fontWeight(normal);
-    font-size: 3.5rem;
     color: $clr-brand;
+    font-family: fontFamily(brand);
+    font-size: 3.5rem;
+    font-weight: fontWeight(normal);
     text-shadow: $txt-shadow;
 }
 
 h2, h3, h4 {
-    font-family: fontFamily(secondary);
     color: $clr-brand;
+    font-family: fontFamily(secondary);
 }
 
 h2 {
@@ -62,12 +63,12 @@ ul {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: .5em;
     height: 0%;
+    padding: .5em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
 }
 
 .main {

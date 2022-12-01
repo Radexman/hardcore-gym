@@ -7,14 +7,14 @@
 };
 
 .main__section {
-    height: 100vh;
-    overflow: hidden;
     align-items: center;
-    text-align: center;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    height: 100vh;
     justify-content: center;
+    overflow: hidden;
+    text-align: center;
     z-index: 5;
     background: 
     linear-gradient(
@@ -29,8 +29,8 @@
 
 .section__h2 {
     color: $clr-brand;
-    font-size: 1.5rem;
     font-family: fontFamily(brand);
+    font-size: 1.5rem;
     font-weight: fontWeight(normal);
     text-shadow: $txt-shadow;
 }

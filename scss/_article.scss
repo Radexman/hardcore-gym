@@ -17,18 +17,18 @@
 
 .article__grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 1em;
+    grid-template-columns: 2fr 1fr;
 }
 
 .tutor-pic {
-    width: 40%;
-    height: auto;
+    border-radius: $border-radius;
+    border: 1px solid $clr-brand;
     float: left;
+    height: auto;
     margin-right: 10px;
     margin-top: 10px;
-    border: 1px solid $clr-brand;
-    border-radius: $border-radius;
+    width: 40%;
 }
 
 .aside__box {
@@ -53,12 +53,12 @@
     }
 
     h3:last-child {
-        margin-top: 10%;
         margin-bottom: 5%;
+        margin-top: 10%;
     }
 
     p {
-        text-align: justify;
         margin-bottom: 40px;
+        text-align: justify;
     }
 }

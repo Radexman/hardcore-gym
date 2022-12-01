@@ -31,12 +31,12 @@ $ltr-spc: .1em;
 $txt-shadow: 6px 0 7px #000;
 
 // Colors
+$clr-accent: #ff956e;
 $clr-brand: #f70101;
 $clr-primary: #0D0D0D;
-$clr-accent: #ff956e;
+$clr-transparent: hsla(0, 0%, 0%, .9);
 $clr-txt: #ffffff;
 $clr-txt2: #000000;
-$clr-transparent: hsla(0, 0%, 0%, .9);
 $opacity: .8;
 
 
@@ -44,68 +44,65 @@ $opacity: .8;
 $transition: all .2s ease-in-out;
 
 // Sizing
-$borders: 2px solid $clr-accent;
 $border-radius: 5px;
+$borders: 2px solid $clr-accent;
 
 // ===== Mixins ===== //
 
 // Nav Bars
 @mixin bar {
-    position: absolute;
-    width: 32px;
-    height: 3px;
     background: $clr-brand;
-    transition: $transition;
     border-radius: $border-radius;
+    height: 3px;
+    position: absolute;
+    transition: $transition;
+    width: 32px;
 }
 
 // Buttons
 @mixin mainBtn {
     border-radius: $border-radius;
-    cursor: pointer;
-    color: $clr-accent;
     border: 2px solid $clr-accent;
+    color: $clr-accent;
+    cursor: pointer;
     display: inline-block;
-    font-weight: 600;
     font-family: 'Oswald';
+    font-weight: 600;
 }
 
 @mixin primaryBtn {
-    padding: .5em 1.5em;
     min-width: 200px;
+    padding: .5em 1.5em;
 }
 
 @mixin hoverBtn {
-    transition: $transition;
     letter-spacing: $ltr-spc;
+    transition: $transition;
 }
 
 @mixin secondaryBtn {
-    padding: .2em .6em;
-    min-width: 100px;
     margin-top: 4%;
+    min-width: 100px;
+    padding: .2em .6em;
 }
 
 @mixin inputField {
-    border: 2px solid $clr-brand;
     border-radius: $border-radius;
+    border: 2px solid $clr-brand;
     color: $clr-txt2;
     min-width: 90%;
 }
 
 $smaller-btn: 70px;
 
-// Shadows
-$box-shadow: 0 0 30px $clr-brand;
-
 // ===== Normalize ===== //
 
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 input,
@@ -113,15 +110,15 @@ label,
 textarea,
 button,
 select {
-    font-size: 100%;
-    font-family: inherit;
     color: $clr-txt;
+    font-family: inherit;
+    font-size: 100%;
 }
 
 img {
     display: block;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 // ===== Utilities ===== //

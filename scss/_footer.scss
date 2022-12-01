@@ -1,20 +1,20 @@
 .footer {
     background-color: $clr-brand;
-    padding: .5em .5em 0;
+    padding: .5em .5em;
 
     &__wrapper {
-        display: flex;
         align-items: center;
-        justify-content: space-between;
+        display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
 
         address {
             font-size: .7rem;
 
             .social-ico {
+                cursor: pointer;
                 font-size: 1.3rem;
                 line-height: 1.3;
-                cursor: pointer;
 
                 &:hover {
                     transition: $transition;
@@ -24,15 +24,15 @@
         }
 
         iframe {
-            height: 80%;
+            height: 120px;
             width: 40%;
         }
     }
 
     .legal-note {
-        text-align: center;
         font-size: .7rem;
         margin-top: .7em;
+        text-align: center;
 
         a {
             color: $clr-primary;

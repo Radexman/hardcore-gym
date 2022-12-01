@@ -10,10 +10,10 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -21,15 +21,15 @@ label,
 textarea,
 button,
 select {
-  font-size: 100%;
-  font-family: inherit;
   color: #ffffff;
+  font-family: inherit;
+  font-size: 100%;
 }
 
 img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .nowrap {
@@ -49,12 +49,10 @@ img {
 }
 
 .main__section {
-  height: 100vh;
-  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,10 +60,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  align-items: center;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  text-align: center;
   z-index: 5;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
@@ -74,8 +74,8 @@ img {
 
 .section__h2 {
   color: #f70101;
-  font-size: 1.5rem;
   font-family: "Road Rage";
+  font-size: 1.5rem;
   font-weight: 400;
   text-shadow: 6px 0 7px #000;
 }
@@ -83,62 +83,62 @@ img {
 .section__btn {
   margin-top: 5%;
   border-radius: 5px;
-  cursor: pointer;
-  color: #ff956e;
   border: 2px solid #ff956e;
+  color: #ff956e;
+  cursor: pointer;
   display: inline-block;
-  font-weight: 600;
   font-family: "Oswald";
-  padding: 0.5em 1.5em;
+  font-weight: 600;
   min-width: 200px;
+  padding: 0.5em 1.5em;
 }
 .section__btn:hover {
+  letter-spacing: 0.1em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  letter-spacing: 0.1em;
 }
 
 .header__menu {
+  cursor: pointer;
+  height: 20px;
   position: absolute;
-  z-index: 1;
   right: 0.5em;
   top: 0.5rem;
-  height: 20px;
   width: 32px;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .menu__burger {
-  position: absolute;
-  width: 32px;
-  height: 3px;
   background: #f70101;
+  border-radius: 5px;
+  height: 3px;
+  position: absolute;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 5px;
+  width: 32px;
   right: 0;
   top: 1em;
 }
 .menu__burger::before {
   content: "";
-  position: absolute;
-  width: 32px;
-  height: 3px;
   background: #f70101;
+  border-radius: 5px;
+  height: 3px;
+  position: absolute;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 5px;
+  width: 32px;
   top: -8px;
 }
 .menu__burger::after {
   content: "";
-  position: absolute;
-  width: 32px;
-  height: 3px;
   background: #f70101;
+  border-radius: 5px;
+  height: 3px;
+  position: absolute;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 5px;
+  width: 32px;
   top: -16px;
 }
 .menu__burger.open {
@@ -162,6 +162,11 @@ img {
   visibility: visible;
 }
 .nav__ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: hsla(0deg, 0%, 0%, 0.9);
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,16 +174,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  background: hsla(0deg, 0%, 0%, 0.9);
   padding-right: 1em;
-  border-radius: 5px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 0.2s ease-in-out;
@@ -191,10 +191,10 @@ img {
 
 .li__a {
   display: block;
-  width: 80vw;
-  text-align: center;
-  padding-block: 0.5em;
   font-size: 1.5rem;
+  padding-block: 0.5em;
+  text-align: center;
+  width: 80vw;
 }
 .li__a:hover {
   background-color: #f70101;
@@ -213,18 +213,18 @@ img {
 
 .article__grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 1em;
+  grid-template-columns: 2fr 1fr;
 }
 
 .tutor-pic {
-  width: 40%;
-  height: auto;
+  border-radius: 5px;
+  border: 1px solid #f70101;
   float: left;
+  height: auto;
   margin-right: 10px;
   margin-top: 10px;
-  border: 1px solid #f70101;
-  border-radius: 5px;
+  width: 40%;
 }
 
 .aside__box {
@@ -245,12 +245,12 @@ img {
   margin-bottom: 5%;
 }
 .article__div h3:last-child {
-  margin-top: 10%;
   margin-bottom: 5%;
+  margin-top: 10%;
 }
 .article__div p {
-  text-align: justify;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 1000px) {
@@ -274,12 +274,11 @@ img {
   #plans {
     padding: 1em 5em;
   }
+  .plan__ul {
+    height: 100px;
+  }
 }
 .social__icons {
-  position: sticky;
-  top: 20px;
-  margin-left: -60px;
-  margin-top: -150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,19 +286,23 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  width: 30px;
   gap: 0.2em;
+  margin-left: -60px;
+  margin-top: -150px;
+  position: sticky;
+  top: 20px;
+  width: 30px;
 }
 .social__icons .social-ico {
-  font-size: 1.4rem;
   color: #f70101;
+  font-size: 1.4rem;
 }
 .social__icons .social-ico:hover {
   color: #ff956e;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #plans {
@@ -309,8 +312,8 @@ img {
   background-size: cover;
 }
 #plans h2 {
-  text-align: center;
   margin-top: 1%;
+  text-align: center;
   text-shadow: 6px 0 7px #000;
 }
 
@@ -321,9 +324,12 @@ img {
 }
 
 .section__plan {
-  border: 2px solid #ff956e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: hsla(0deg, 0%, 0%, 0.85);
   border-radius: 10px;
+  border: 2px solid #ff956e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,43 +337,40 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-block: 1em 2em;
   padding-inline: 0.7em;
 }
-.section__plan:hover {
-  -webkit-box-shadow: 0 0 30px #f70101;
-          box-shadow: 0 0 30px #f70101;
+
+.plan__ul {
+  height: 260px;
 }
 
 .fa-dumbbell {
-  font-size: 0.9rem;
   color: #f70101;
+  font-size: 0.9rem;
   margin-right: 0.5em;
 }
 
 .btn__secondary {
   border-radius: 5px;
-  cursor: pointer;
-  color: #ff956e;
   border: 2px solid #ff956e;
+  color: #ff956e;
+  cursor: pointer;
   display: inline-block;
-  font-weight: 600;
   font-family: "Oswald";
-  padding: 0.2em 0.6em;
-  min-width: 100px;
+  font-weight: 600;
   margin-top: 4%;
+  min-width: 100px;
+  padding: 0.2em 0.6em;
   background: #0D0D0D;
 }
 .btn__secondary:hover {
+  letter-spacing: 0.1em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  letter-spacing: 0.1em;
 }
 
 .contact {
@@ -385,14 +388,14 @@ img {
 }
 
 .fieldset {
+  border: none;
   display: grid;
   grid-gap: 0.3em;
-  border: none;
   place-content: center;
 }
 .fieldset__input, .fieldset select {
-  border: 2px solid #f70101;
   border-radius: 5px;
+  border: 2px solid #f70101;
   color: #000000;
   min-width: 90%;
 }
@@ -403,30 +406,30 @@ address h3 {
 
 .footer {
   background-color: #f70101;
-  padding: 0.5em 0.5em 0;
+  padding: 0.5em 0.5em;
 }
 .footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__wrapper address {
   font-size: 0.7rem;
 }
 .footer__wrapper address .social-ico {
+  cursor: pointer;
   font-size: 1.3rem;
   line-height: 1.3;
-  cursor: pointer;
 }
 .footer__wrapper address .social-ico:hover {
   -webkit-transition: all 0.2s ease-in-out;
@@ -434,13 +437,13 @@ address h3 {
   color: #ff956e;
 }
 .footer__wrapper iframe {
-  height: 80%;
+  height: 120px;
   width: 40%;
 }
 .footer .legal-note {
-  text-align: center;
   font-size: 0.7rem;
   margin-top: 0.7em;
+  text-align: center;
 }
 .footer .legal-note a {
   color: #0D0D0D;
@@ -448,6 +451,23 @@ address h3 {
 }
 .footer .legal-note a:hover {
   color: #ff956e;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f70101;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D0D0D;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff956e;
 }
 
 html {
@@ -462,16 +482,16 @@ body {
 }
 
 h1 {
-  font-family: "Road Rage";
-  font-weight: 400;
-  font-size: 3.5rem;
   color: #f70101;
+  font-family: "Road Rage";
+  font-size: 3.5rem;
+  font-weight: 400;
   text-shadow: 6px 0 7px #000;
 }
 
 h2, h3, h4 {
-  font-family: "Oswald";
   color: #f70101;
+  font-family: "Oswald";
 }
 
 h2 {
@@ -496,12 +516,12 @@ ul {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  padding: 0.5em;
   height: 0%;
+  padding: 0.5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 .main {

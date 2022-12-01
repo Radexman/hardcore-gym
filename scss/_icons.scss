@@ -1,21 +1,21 @@
 .social__icons {
-    position: sticky;
-    top: 20px;
-    margin-left: -60px;
-    margin-top: -150px;
     display: flex;
     flex-flow: column nowrap;
-    width: 30px;
     gap: .2em;
+    margin-left: -60px;
+    margin-top: -150px;
+    position: sticky;
+    top: 20px;
+    width: 30px;
 
     .social-ico {
-        font-size: 1.4rem;
         color: $clr-brand;
+        font-size: 1.4rem;
 
         &:hover {
             color: $clr-accent;
-            transition: $transition;
             transform: translateX(3px);
+            transition: $transition;
         }
     }
 }
