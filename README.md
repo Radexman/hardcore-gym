@@ -9,5 +9,5 @@
  on all kinds of devices. Small form at the end
  of webpage sends info to https/bin.
  
- https://hardcoregym002.netlify.app/
- 
+Link to site here:
+https://hardcoregym001.netlify.app/
