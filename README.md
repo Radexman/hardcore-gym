@@ -8,3 +8,6 @@
  RWD is used in this project so it looks good
  on all kinds of devices. Small form at the end
  of webpage sends info to https/bin.
+ 
+ https://hardcoregym002.netlify.app/
+ 
