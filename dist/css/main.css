@@ -67,9 +67,12 @@ img {
   overflow: hidden;
   text-align: center;
   z-index: 5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/hero-img.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/hero-img.jpg);
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)),
+   url(../assets/images/hero-img.jpg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section__h2 {
@@ -307,9 +310,12 @@ img {
 
 #plans {
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(250, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/dist/assets/images/plans-bg.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/dist/assets/images/plans-bg.jpg);
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(255, 0, 0, 0.8)),
+   url(../assets/images/plans-bg.jpg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #plans h2 {
   margin-top: 1%;

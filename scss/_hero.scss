@@ -16,15 +16,14 @@
     overflow: hidden;
     text-align: center;
     z-index: 5;
-    background: 
-    linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, .9),
-        rgba(250, 0, 0, 0.6),
-        rgba(0, 0, 0, .9)
-    ),
-    url(/dist/assets/images/hero-img.jpg);
-    background-size: cover;
+    // background: 
+    // linear-gradient(
+    //     to bottom,
+    //     rgba(0, 0, 0, .9),
+    //     rgba(250, 0, 0, 0.6),
+    //     rgba(0, 0, 0, .9)
+    // ),
+    // url(../dist/hero.jpg);
 }
 
 .section__h2 {
